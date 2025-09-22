@@ -54,27 +54,32 @@ Before running the dashboard, make sure you have:
 git clone https://github.com/Ajay-Kumar-Jaiswal/Dashboards
 cd Dashboards
 
+```
 2. **Create a virtual environment (optional but recommended)**
 ```bash
 python -m venv venv
 
-3. **Activate the virtual environment**
+```
+3. **Activate the virtual environment**    
 For Windows:
 ```bash
 venv\Scripts\activate
+```
 For macOS/Linux:
 ```bash
 source venv/bin/activate
 
-
+```
 4. **Install dependencies**
 ```bash
 pip install -r requirements.txt
 
+```
 5. **Run the dashboard**
 ```bash
 python app.py
 
+```
 6. **Open your browser**
 ```bash
 for example http://127.0.0.1:8050
