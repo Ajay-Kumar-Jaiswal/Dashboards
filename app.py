@@ -3,7 +3,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from dash import Dash, dcc, html, Input, Output
 
-df = pd.read_csv("matpolit\\netflix_titles.csv")
+df = pd.read_csv("netflix_titles.csv")
 df.dropna(subset=['type','release_year','rating','country','duration'], inplace=True)
 
 titles=len(df)
@@ -12,6 +12,7 @@ shows=len(df[df['type']=='TV Show'])
 countries=df['country'].nunique()
 
 app=Dash(__name__)
+server = app.server 
 app.title="Netflix Dashborad"
 
 app.layout=html.Div(style={'font-family': 'sans-serif','display':'flex'},children=[
@@ -142,3 +143,4 @@ def update_chart(selected_type,selected_country,year_range):
     return fig_type,rig_type,dur_type,reg_type,count_type,filt_type
 if __name__=="__main__":
     app.run(debug=True)
+
