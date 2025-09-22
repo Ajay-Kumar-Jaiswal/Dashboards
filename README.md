@@ -18,7 +18,7 @@ An interactive **Netflix Dashboard** built with **Plotly Dash** to visualize Net
 ## 📂 Dataset
 
 Dataset used: `netflix_titles.csv`  
-You can include your CSV or download from [Kaggle Netflix Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+You can also include your CSV 
 
 Columns used:  
 - `type` – Movie or TV Show  
